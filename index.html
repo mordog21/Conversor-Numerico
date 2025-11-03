@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Sistemas Numéricos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Sistemas Numéricos</h1>
+    <p>Convierte entre sistemas <strong>Decimal</strong>, <strong>Binario</strong>, <strong>Octal</strong> y <strong>Hexadecimal</strong></p>
+
+    <label for="numberInput">Ingresa un número:</label>
+    <input type="text" id="numberInput" placeholder="Ejemplo: 15 o 1111">
+
+    <label for="systemSelect">Selecciona el sistema de origen:</label>
+    <select id="systemSelect">
+      <option value="10">Decimal</option>
+      <option value="2">Binario</option>
+      <option value="8">Octal</option>
+      <option value="16">Hexadecimal</option>
+    </select>
+
+    <button id="convertBtn">Convertir</button>
+
+    <div id="results">
+      <h2>Resultados:</h2>
+      <p><strong>Decimal:</strong> <span id="decimalResult">-</span></p>
+      <p><strong>Binario:</strong> <span id="binaryResult">-</span></p>
+      <p><strong>Octal:</strong> <span id="octalResult">-</span></p>
+      <p><strong>Hexadecimal:</strong> <span id="hexResult">-</span></p>
+    </div>
+  </div>
+
+  <div class="info">
+    <h2>Explicación del Funcionamiento</h2>
+    <p>
+      En los computadores, los números se representan utilizando diferentes sistemas numéricos. 
+      La <strong>aritmética del computador</strong> se basa en la manipulación de bits (0 y 1) 
+      para realizar operaciones matemáticas y lógicas. Este conversor demuestra cómo un mismo valor 
+      puede representarse en distintas bases:
+    </p>
+    
+    <ul>
+      <li><strong>Binario (Base 2):</strong> Solo usa los dígitos 0 y 1. Es el lenguaje que entiende directamente el computador.  
+        <em>Ejemplo:</em> 15 en decimal = 1111 en binario.</li>
+      <li><strong>Octal (Base 8):</strong> Usa los dígitos del 0 al 7. Se utiliza como forma abreviada del binario.  
+        <em>Ejemplo:</em> 15 en decimal = 17 en octal.</li>
+      <li><strong>Decimal (Base 10):</strong> Es el sistema que usamos los humanos.  
+        <em>Ejemplo:</em> 15 en decimal = 15.</li>
+      <li><strong>Hexadecimal (Base 16):</strong> Usa los dígitos del 0 al 9 y las letras A–F.  
+        <em>Ejemplo:</em> 15 en decimal = F en hexadecimal.</li>
+    </ul>
+
+    <p>
+      Este programa convierte cualquier número desde el sistema elegido a los otros tres, 
+      utilizando las funciones matemáticas de <strong>JavaScript</strong> 
+      (<code>parseInt()</code> y <code>toString()</code>). 
+      Así se demuestra cómo el computador traduce valores entre sistemas de representación.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
