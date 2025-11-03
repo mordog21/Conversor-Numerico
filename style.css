@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   background: linear-gradient(135deg, #007bff, #00c6ff);
   color: #fff;
   margin: 0;
@@ -11,7 +11,7 @@ body {
   padding: 30px;
   border-radius: 20px;
   width: 90%;
-  max-width: 500px;
+  max-width: 550px;
   margin: 40px auto;
   text-align: center;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
@@ -62,7 +62,7 @@ button:hover {
   padding: 30px;
   border-radius: 20px;
   width: 90%;
-  max-width: 800px;
+  max-width: 900px;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
@@ -71,10 +71,25 @@ button:hover {
   text-align: center;
 }
 
-.info ul {
-  text-align: left;
+.systems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
 }
 
-.info li {
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  color: #007bff;
   margin-bottom: 10px;
+}
+
+.card p {
+  color: #333;
 }

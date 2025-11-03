@@ -14,7 +14,7 @@ document.getElementById("convertBtn").addEventListener("click", () => {
       return;
     }
 
-    // Conversión a los diferentes sistemas
+    // Mostrar conversiones
     document.getElementById("decimalResult").textContent = decimalValue;
     document.getElementById("binaryResult").textContent = decimalValue.toString(2);
     document.getElementById("octalResult").textContent = decimalValue.toString(8);
